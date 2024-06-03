@@ -4,13 +4,14 @@ import { UserComponent } from "./user/user.component";
 import { InlineComponent } from "./inline/inline.component";
 import { InterpolationComponent } from "./interpolation/interpolation.component";
 import { EventsComponent } from "./events/events.component";
+import { BindingsComponent } from "./bindings/bindings.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
