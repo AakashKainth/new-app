@@ -6,13 +6,15 @@ import { InterpolationComponent } from "./interpolation/interpolation.component"
 import { EventsComponent } from "./events/events.component";
 import { BindingsComponent } from "./bindings/bindings.component";
 import { ClassBindingComponent } from "./class-binding/class-binding.component";
+import { NgClassDirComponent } from "./ng-class-dir/ng-class-dir.component";
+import { StyleBindingComponent } from "./style-binding/style-binding.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
