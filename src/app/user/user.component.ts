@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+  public counter(str:string) {
+    (str === 'add' ? this.value++ : this.value--);
+
+  }
+
+  public value:number = 0;
 }
