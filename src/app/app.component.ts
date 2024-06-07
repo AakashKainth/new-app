@@ -11,13 +11,14 @@ import { StyleBindingComponent } from "./style-binding/style-binding.component";
 import { TemplateReferenceComponent } from "./template-reference/template-reference.component";
 import { TwoWayBindingComponent } from "./two-way-binding/two-way-binding.component";
 import { FormsModule } from '@angular/forms';
+import { StructureDirectivesComponent } from "./structure-directives/structure-directives.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
