@@ -12,11 +12,17 @@ import { Component } from '@angular/core';
 export class StructureDirectivesComponent {
 
 public fruits = ["Banana","Mango","Grapes"];
+// public persons = [
+//      {name:"Kumar", age:24, isMArried: true},
+//      {name:"Zain", age:26, isMArried: false},
+//      {name:"Aakash", age:21, isMArried: true}
+//    ];
+
 public persons = [
-     {name:"Kumar", age:24, isMArried: true},
-     {name:"Zain", age:26, isMArried: false},
-     {name:"Aakash", age:21, isMArried: true}
-   ];
+  {name:"Kumar", age:24, isMArried: true, hobbies:['Writing','Reding','Singing']},
+  {name:"Zain", age:26, isMArried: false, hobbies:['Dancing','Sleeping','Singing']},
+  {name:"Aakash", age:21, isMArried: true, hobbies:['Sports','Reding','Songs']}
+];
 
   //public pizza = 'Supreme';
 
