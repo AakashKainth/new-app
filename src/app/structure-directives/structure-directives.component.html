@@ -25,15 +25,25 @@
 
 </div> -->
 
-<div *ngFor = "let p of persons; index as i">
+<!-- <div *ngFor = "let p of persons; index as i">
     <h2>{{ i }}</h2>
     <h2> {{p.name}} </h2>
     <h2> {{p.age}} </h2>
     <h2> {{p.isMArried}} </h2>
     <br>
 
-</div>
+</div> -->
 
+
+<ul *ngFor="let p of persons">
+    <li>{{ p.name }}</li>
+    <li>{{ p.age }}</li>
+    <li>{{ p.isMArried }}</li>
+
+    <ul *ngFor="let hobby of p.hobbies">
+        <li>{{ hobby }}</li>
+    </ul>
+</ul>
 
 <!-- <h1 *ngIf="display; else elsePart">
     Learning Never Ends
