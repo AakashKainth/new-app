@@ -12,18 +12,30 @@ import { TemplateReferenceComponent } from "./template-reference/template-refere
 import { TwoWayBindingComponent } from "./two-way-binding/two-way-binding.component";
 import { FormsModule } from '@angular/forms';
 import { StructureDirectivesComponent } from "./structure-directives/structure-directives.component";
+import { ChildComponent } from "./child/child.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
-  name= "Aakash"
+  name= "Kajal"
+  fruits = ["Apple","Banana","Mango","Grapes"]
+  obj = {
+    name: "Kumar",
+    age: 24,
+    isMarried: true
+  }
+
   helloMessage(){
     return 'Hello Aakash'
+  }
+
+  changeData(){
+    this.name = 'Aakash'
   }
 }
