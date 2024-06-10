@@ -1,2 +1,5 @@
 <p>Welcome to Angular by Aakash</p>
-<app-structure-directives></app-structure-directives>
+<app-child [myData]="name"></app-child>
+<app-child [myDataArray]="fruits"></app-child>
+<app-child [myDataObj]="obj"></app-child>
+<button (click)="changeData()">Change Data</button>
