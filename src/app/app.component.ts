@@ -15,13 +15,16 @@ import { StructureDirectivesComponent } from "./structure-directives/structure-d
 import { ChildComponent } from "./child/child.component";
 import { Child2Component } from "./child2/child2.component";
 import { PipesComponent } from "./pipes/pipes.component";
+import { CustomPipe } from "./pipes/custom.pipe";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent, Child2Component, PipesComponent]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, 
+      ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, 
+      FormsModule, StructureDirectivesComponent, ChildComponent, Child2Component, PipesComponent, CustomPipe]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
