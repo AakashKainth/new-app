@@ -14,13 +14,14 @@ import { FormsModule } from '@angular/forms';
 import { StructureDirectivesComponent } from "./structure-directives/structure-directives.component";
 import { ChildComponent } from "./child/child.component";
 import { Child2Component } from "./child2/child2.component";
+import { PipesComponent } from "./pipes/pipes.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent, Child2Component]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent, Child2Component, PipesComponent]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
