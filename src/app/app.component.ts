@@ -13,29 +13,32 @@ import { TwoWayBindingComponent } from "./two-way-binding/two-way-binding.compon
 import { FormsModule } from '@angular/forms';
 import { StructureDirectivesComponent } from "./structure-directives/structure-directives.component";
 import { ChildComponent } from "./child/child.component";
+import { Child2Component } from "./child2/child2.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent]
+    imports: [RouterOutlet, UserComponent, InlineComponent, InterpolationComponent, EventsComponent, BindingsComponent, ClassBindingComponent, NgClassDirComponent, StyleBindingComponent, TemplateReferenceComponent, TwoWayBindingComponent, FormsModule, StructureDirectivesComponent, ChildComponent, Child2Component]
 })
 export class AppComponent {
   title = 'Learning Never Ends';
-  name= "Kajal"
-  fruits = ["Apple","Banana","Mango","Grapes"]
-  obj = {
-    name: "Kumar",
-    age: 24,
-    isMarried: true
-  }
+public msg = '';
 
-  helloMessage(){
-    return 'Hello Aakash'
-  }
+  // name= "Kajal"
+  // fruits = ["Apple","Banana","Mango","Grapes"]
+  // obj = {
+  //   name: "Kumar",
+  //   age: 24,
+  //   isMarried: true
+  // }
 
-  changeData(){
-    this.name = 'Aakash'
-  }
+  // helloMessage(){
+  //   return 'Hello Aakash'
+  // }
+
+  // changeData(){
+  //   this.name = 'Aakash'
+  // }
 }
