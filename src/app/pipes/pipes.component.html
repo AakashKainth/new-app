@@ -23,7 +23,7 @@
  <h2>{{ myDate | date : 'longTime' }}</h2>
  <h2>{{ myDate | date : 'fullTime' }}</h2> -->
 
- <h2>{{ myDate | date : 'h' }}</h2>
+ <!-- <h2>{{ myDate | date : 'h' }}</h2>
  <h2>{{ myDate | date : 'm' }}</h2>
  <h2>{{ myDate | date : 's' }}</h2>
  <h2>{{ myDate | date : 'a' }}</h2>
@@ -36,4 +36,19 @@
  <h2>{{ myDate | date : 'W' }}</h2>
  <h2>{{ myDate | date : 'w' }}</h2>
  <h2>{{ myDate | date : 'd-m-y' }}</h2>
- <h2>{{ myDate | date : 'm-d-y' }}</h2>
+ <h2>{{ myDate | date : 'm-d-y' }}</h2> -->
+
+ <!-- Below code for number pipe did not work for me
+ <h2>{{ 3.789 | number: "2.5-6"}}</h2> -->
+
+ <!-- <h2>{{ 0.50 | percent}}</h2>
+ <h2>{{ 0.50*100 }}</h2> -->
+
+ <h2>{{ 25 | currency }}</h2>
+ <h2>{{ 25 | currency: "INR" }}</h2>
+ <h2>{{ 25 | currency: "EUR" }}</h2>
+ <h2>{{ 25 | currency: "GBP":'code' }}</h2>
+ <h2>{{ 25 | currency: "EUR": 'symbol' }}</h2>bol
+ <h2>{{ 25 | currency: "EUR": 'symbol': '3.5-6' }}</h2>
+
+
